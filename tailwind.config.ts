@@ -9,7 +9,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'super-pixel': ['Super Pixel', 'sans-serif'],  // Add custom font family
+        "super-pixel": ["Super Pixel", "sans-serif"],
+        xmas: ["Merry Xmas", "sans-serif"],
+        nicholas: ["stnicholas", "sans-serif"],
       },
     },
   },
