@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --sds-size-depth-0: 0px;
+  --sds-size-depth-100: 1px;
+  --sds-size-depth-200: 2px;
+  --sds-size-depth-400: 4px;
+  --sds-size-depth-800: 8px;
+  --sds-size-depth-negative-100: -1px;
+  
+  --sds-color-black-100: rgba(0, 0, 0, 0.1);
+  --sds-color-black-200: rgba(0, 0, 0, 0.2);
+  --sds-color-black-300: rgba(0, 0, 0, 0.3);
+}
+
+
+body {
+  background-color: #121f2c;
+  font-family: "Merry Xmas", sans-serif;
+}
+
+@font-face {
+  font-family: "Merry Xmas";
+  src: url("/fonts/Merry Xmas.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Super Pixel";
+  src: url("/fonts/Super Pixel Personal Use.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.custom-shadow {
+  text-shadow: 
+    0px -1.94px 0.45px 0px #39bbed33, 
+    0px 1.29px 31.98px 0px #f8e236,
+    -1.94px 1.29px 2.2px 0px #00000040, 
+    2.58px 5.17px 4.14px 0px #00000040,
+    0px 0px 0px 0.65px #f8e236, 
+    0px 0.65px 1.68px 0px #000000ad,
+    0px 0px 2.58px 0px #00ffff66, 
+    -0.65px 0.65px 1.29px 0px #00000069,
+    -0.65px 3.23px 3.94px 0px #00000096;
+}
+
+
+.custom-box-shadow {
+  box-shadow: 
+    var(--sds-size-depth-0) var(--sds-size-depth-100) var(--sds-size-depth-100) var(--sds-size-depth-negative-100) var(--sds-color-black-100),
+    var(--sds-size-depth-0) var(--sds-size-depth-400) var(--sds-size-depth-800) var(--sds-size-depth-negative-100) var(--sds-color-black-200),
+    3px 3px 0px 0px #000000;
+}
+
+
+
+/* styles/globals.css */
+
+/* Pseudo-element for background image with opacity */
+button {
+  position: relative;
+  overflow: hidden;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit; /* Inherit the background image */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3; /* 30% opacity for the background image */
+  z-index: -1; /* Place the image behind the button content */
+}
+
+button {
+  position: relative; /* Ensure button's text is above the pseudo-element */
+  background-color: #BFD7C1; /* Button background color */
+}
