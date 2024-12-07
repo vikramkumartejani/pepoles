@@ -51,7 +51,7 @@ export default function Calendar() {
         >
           {/* Header Icon */}
           <div className="flex justify-center mb-[25.81px]">
-            <div className="bg-black rounded-full pt-[13.35px] flex items-center justify-center md:w-[78.41px] w-[67px]  h-[67px] h-[78.43px]">
+            <div className="bg-black rounded-full pt-[13.35px] flex items-center justify-center md:w-[78.41px] w-[67px]  h-[67px] md:h-[78.43px]">
               <Image
                 src="/assets/pole.png"
                 alt="Calendar Icon"
