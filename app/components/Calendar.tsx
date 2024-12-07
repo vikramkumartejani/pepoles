@@ -28,17 +28,17 @@ export default function Calendar() {
   };
 
   return (
-    <div className="min-h-screen py-[32.54px">
+    <div className="min-h-screen lg:pt-[33px] lg:pb-[33px] pb-[80px]">
       <div className="flex items-center justify-center relative md:px-8 px-4">
         <Image
           src="/assets/snow-man.svg"
           alt="snowman"
-          width={67}
+          width={66}
           height={66}
-          className="absolute bottom-[109px] xl:left-[3.7vw] left-[1vw] z-[1]"
+          className="absolute lg:bottom-[109px] bottom-[-105px] xl:left-[3.6vw] xl:max-w-[4.2vw] lg:max-w-[4.8vw] lg:left-[1vw] left-4 z-[0]"
         />
         <div
-          className="bg-[#FFFFFF42] border-[5px] border-black rounded-[6px] py-[27px] md:px-[25px] px-6 max-w-[1079px] w-full relative z-[2]"
+          className="bg-[#FFFFFF42] border-[5px] border-black rounded-[6px] py-[27px] md:px-[25px] px-6 max-w-[290px] sm:max-w-[530px] md:max-w-[730px] lg:max-w-[900px] xl:max-w-[1079px] w-full relative z-[2]"
           style={{
             boxShadow: `
     11px 11px 14.6px 0px #0000008A inset,
@@ -51,12 +51,13 @@ export default function Calendar() {
         >
           {/* Header Icon */}
           <div className="flex justify-center mb-[25.81px]">
-            <div className="bg-black rounded-full pt-[13.35px] flex items-center justify-center w-[78.41px] h-[78.43px]">
+            <div className="bg-black rounded-full pt-[13.35px] flex items-center justify-center md:w-[78.41px] w-[67px]  h-[67px] h-[78.43px]">
               <Image
                 src="/assets/pole.png"
                 alt="Calendar Icon"
                 width={41.46}
                 height={62.58}
+                className="md:h-[62.58px] h-[50px] md:w-[41.46px] w-auto"
               />
             </div>
           </div>
